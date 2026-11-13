@@ -22,35 +22,16 @@ function startHeroTyping() {
 
   var name = 'Rahardyan';
   var characterIndex = 0;
-  var isDeleting = false;
   typedName.textContent = '';
-  typedName.parentElement.classList.remove('is-typed');
 
   function typeNextCharacter() {
-    if (!isDeleting && characterIndex < name.length) {
-      characterIndex++;
-      typedName.textContent = name.slice(0, characterIndex);
+    characterIndex++;
+    typedName.textContent = name.slice(0, characterIndex);
+    if (characterIndex < name.length) {
       typingTimer = window.setTimeout(typeNextCharacter, 112);
-      return;
-    }
-
-    if (!isDeleting && characterIndex === name.length) {
+    } else {
       typedName.parentElement.classList.add('is-typed');
-      isDeleting = true;
-      typingTimer = window.setTimeout(typeNextCharacter, 1450);
-      return;
     }
-
-    if (isDeleting && characterIndex > 0) {
-      characterIndex--;
-      typedName.textContent = name.slice(0, characterIndex);
-      typingTimer = window.setTimeout(typeNextCharacter, 58);
-      return;
-    }
-
-    isDeleting = false;
-    typedName.parentElement.classList.remove('is-typed');
-    typingTimer = window.setTimeout(typeNextCharacter, 360);
   }
 
   typingTimer = window.setTimeout(typeNextCharacter, 180);
