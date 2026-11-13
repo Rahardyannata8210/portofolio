@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^Copy-Item -LiteralPath 'C:\\\\Users\\\\user\\\\AppData\\\\Roaming\\\\Code\\\\agentSessionData\\\\381a4343-b9b9-4c54-9c0d-a6145f92c3a9\\\\attachments\\\\e0b41391-1b29-45f4-8abe-65745610dbc1\\\\Pasted Image\\.png' -Destination 'D:\\\\xampp\\\\htdocs\\\\jokiportorahar\\\\assets\\\\img\\\\profil\\.jpg' -Force; Copy-Item -LiteralPath 'C:\\\\Users\\\\user\\\\AppData\\\\Roaming\\\\Code\\\\agentSessionData\\\\381a4343-b9b9-4c54-9c4-8f1c-4cfb8ada-def7ffcb6050\\\\Pasted Image 3\\.png' -Destination 'D:\\\\xampp\\\\htdocs\\\\jokiportorahar\\\\assets\\\\img\\\\profile\\.png' -Force$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

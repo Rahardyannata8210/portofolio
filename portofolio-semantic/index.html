@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#080f1c" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rahardyan Putra Winata — Portfolio" />
+    <meta
+      property="og:description"
+      content="Portofolio Rahardyan Putra Winata, siswa kelas XI Rekayasa Perangkat Lunak di SMK PGRI 03 Malang."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahardyan Putra Winata — RPL Student</title>
+    <meta
+      name="description"
+      content="Portofolio Rahardyan Putra Winata, siswa kelas XI Rekayasa Perangkat Lunak di SMK PGRI 03 Malang."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <div class="intro-screen" id="introScreen" aria-label="Pembuka portofolio" hidden>
+      <span class="intro-screen__corner intro-screen__corner--top" aria-hidden="true">PORTFOLIO / 2026</span>
+      <div class="intro-screen__content">
+        <div class="intro-screen__emblem" aria-hidden="true">
+          <span class="intro-screen__orbit intro-screen__orbit--outer"></span>
+          <span class="intro-screen__orbit intro-screen__orbit--inner"></span>
+          <span class="intro-screen__mark">R</span>
+          <span class="intro-screen__spark intro-screen__spark--one"></span>
+          <span class="intro-screen__spark intro-screen__spark--two"></span>
+        </div>
+        <div class="intro-screen__identity">
+          <span class="intro-screen__eyebrow">DIGITAL PORTFOLIO · RPL STUDENT</span>
+          <p>Rahardyan Putra Winata</p>
+          <span class="intro-screen__location">MALANG, INDONESIA</span>
+        </div>
+        <div class="intro-screen__loader" role="presentation">
+          <span class="intro-screen__line"></span>
+          <span class="intro-screen__loading-label">MENYIAPKAN PORTOFOLIO</span>
+        </div>
+      </div>
+      <span class="intro-screen__corner intro-screen__corner--bottom" aria-hidden="true">R. / 01</span>
+      <button class="intro-screen__skip" id="skipIntro" type="button">Lewati intro <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress__bar" id="scrollProgress"></span>
+    </div>
+
+    <!-- 1. HEADER + NAV -->
+    <header>
+      <nav class="site-nav" id="navbar">
+        <div
+          class="container d-flex align-items-center justify-content-between">
+          <a class="site-nav__brand" href="#home">Rahardyan.</a>
+          <ul
+            class="site-nav__links d-none d-lg-flex list-unstyled mb-0"
+            id="nav">
+            <li><a class="nav-link-x" href="#home">Beranda</a></li>
+            <li><a class="nav-link-x" href="#tentang">Tentang</a></li>
+            <li><a class="nav-link-x" href="#skill">Skill</a></li>
+            <li><a class="nav-link-x" href="#toolkit">AI Toolkit</a></li>
+            <li><a class="nav-link-x" href="#lab">Lab</a></li>
+            <li><a class="nav-link-x" href="#projek">Projek</a></li>
+            <li><a class="nav-link-x" href="#kontak">Kontak</a></li>
+          </ul>
+
+          <button
+            class="site-nav__toggle d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Buka menu navigasi">
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Menu untuk HP (tinggal salin) -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="mobileMenu"
+        aria-labelledby="mobileMenuLabel"
+      >
+        <div class="offcanvas-header">
+          <span class="offcanvas-title" id="mobileMenuLabel">Rahardyan.</span>
+          <button
+            type="button"
+            class="offcanvas-close-btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Tutup menu"
+          >
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled offcanvas-nav">
+            <li>
+              <a class="nav-link-x" href="#home" style="--i: 0">Beranda</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#tentang" style="--i: 1">Tentang</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#skill" style="--i: 2">Skill</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#toolkit" style="--i: 3">AI Toolkit</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#lab" style="--i: 4">Lab Belajar</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#projek" style="--i: 5">Projek</a>
+            </li>
+            <li>
+              <a class="nav-link-x" href="#kontak" style="--i: 6">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. MAIN = isi utama halaman -->
+    <main id="main-content">
+      <!-- SECTION: Beranda -->
+      <section id="home" class="hero">
+        <div class="hero-bg-watermark" aria-hidden="true">
+          <span class="hero-bg-watermark__line">PORTFOLIO</span>
+          <span class="hero-bg-watermark__line">PORTFOLIO</span>
+          <span class="hero-bg-watermark__line">PORTFOLIO</span>
+          <span class="hero-bg-watermark__line">PORTFOLIO</span>
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 hero__content">
+              <div class="hero-kicker">
+                <span class="hero-kicker__dot" aria-hidden="true"></span>
+                <span>SISWA RPL · KELAS XI</span>
+                <span class="hero-kicker__divider" aria-hidden="true">/</span>
+                <span>MALANG, INDONESIA</span>
+              </div>
+              <h1 class="hero-title" aria-label="Halo, saya Rahardyan Putra Winata.">
+                Halo, saya<br />
+                <span class="accent">
+                  <span id="typedName" aria-hidden="true">Rahardyan</span>
+                  <span class="typewriter-cursor" aria-hidden="true"></span>
+                </span><br />
+                Putra Winata.
+              </h1>
+              <p class="hero-desc hero-seq" style="--d: 250ms">
+                Saya senang mencari tahu bagaimana sebuah website dibangun—
+                mulai dari struktur hingga interaksi. Setiap latihan memberi
+                saya ruang untuk mencoba, belajar dari proses, dan berkembang.
+              </p>
+              <div class="hero-actions hero-seq" style="--d: 350ms">
+                <a class="btn-cta hero-cta" href="#projek">
+                  Lihat projek <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <a class="hero-secondary-link" href="#tentang">
+                  Kenali saya <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="hero-proof hero-seq" style="--d: 450ms" aria-label="Ringkasan portofolio">
+                <div class="hero-proof__item">
+                  <strong>07</strong><span>teknologi dieksplorasi</span>
+                </div>
+                <span class="hero-proof__divider" aria-hidden="true"></span>
+                <div class="hero-proof__item">
+                  <strong>03</strong><span>soft skill</span>
+                </div>
+                <span class="hero-proof__divider" aria-hidden="true"></span>
+                <div class="hero-proof__item">
+                  <strong>XI</strong><span>siswa RPL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 hero__visual-col">
+              <div class="hero-visual-container">
+                <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+                <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+                <div class="hero-visual-frame" aria-hidden="true"></div>
+                <div class="hero-seal" aria-label="Rekayasa Perangkat Lunak di SMK PGRI 03 Malang">
+                  <span>SMK PGRI 03</span>
+                  <strong>RPL</strong>
+                  <span>MALANG</span>
+                </div>
+                <div class="hero-visual-wrap">
+                  <figure class="hero-visual">
+                    <img
+                      src="../assets/img/profil.png"
+                      alt="Rahardyan Putra Winata mengenakan seragam sekolah"
+                      width="768"
+                      height="1024"
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                  />
+                  </figure>
+                </div>
+                <div class="hero-photo-caption">
+                  <span class="hero-photo-caption__icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+                  <span><strong>Belajar, mencoba, bertumbuh</strong><small>Rekayasa Perangkat Lunak · SMK PGRI 03</small></span>
+                  <span class="hero-photo-caption__spark" aria-hidden="true"><i class="bi bi-stars"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="hero-scroll-cue" href="#tentang">
+          <span>SCROLL UNTUK MENJELAJAH</span><i class="bi bi-arrow-down" aria-hidden="true"></i>
+        </a>
+      </section>
+      <div class="tech-ribbon" aria-label="Teknologi yang sedang dipelajari">
+        <div class="tech-ribbon__track">
+          <span>HTML</span><i></i><span>CSS</span><i></i><span>JAVASCRIPT</span><i></i><span>PHP</span><i></i><span>MYSQL</span><i></i><span>LARAVEL</span><i></i><span>CANVA</span><i></i>
+          <span aria-hidden="true">HTML</span><i aria-hidden="true"></i><span aria-hidden="true">CSS</span><i aria-hidden="true"></i><span aria-hidden="true">JAVASCRIPT</span><i aria-hidden="true"></i><span aria-hidden="true">PHP</span><i aria-hidden="true"></i><span aria-hidden="true">MYSQL</span><i aria-hidden="true"></i><span aria-hidden="true">LARAVEL</span><i aria-hidden="true"></i><span aria-hidden="true">CANVA</span><i aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <!-- SECTION: Tentang Saya -->
+      <section id="tentang" class="section-tentang section-tentang--dark">
+        <div class="tentang-bg-decor" aria-hidden="true">
+          <span class="tentang-bg-text">WEB DEVELOPER</span>
+        </div>
+
+        <div class="container position-relative">
+          <div class="section-header-serif text-center mb-5" data-reveal>
+            <h2 class="section-title-serif section-title-serif--light">
+              Tentang Saya
+            </h2>
+          </div>
+
+          <div
+            class="row align-items-center justify-content-center g-4 g-lg-5 tentang-2col-row">
+            <div
+              class="col-lg-5 col-md-5 text-center tentang-photo-col"
+              data-reveal
+              style="--i: 1">
+              <div class="tentang-cutout-stage">
+                <div class="tentang-cutout-glow" aria-hidden="true"></div>
+                <figure class="tentang-cutout-figure">
+                  <img
+                    src="../assets/img/profile.png"
+                    alt="Rahardyan Putra Winata mengenakan seragam sekolah"
+                    class="tentang-cutout-img"
+                    width="720"
+                    height="1280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 tentang-content-col"
+              data-reveal
+              style="--i: 2">
+              <div class="tentang-about-block">
+                <span class="tentang-greeting">BIOGRAFI &amp; PROFIL</span>
+                <h3 class="tentang-about-title">Rahardyan Putra Winata</h3>
+                <p class="tentang-about-desc">
+                  Saya adalah siswa kelas 11 jurusan Rekayasa Perangkat Lunak
+                  di SMK PGRI 03 Malang yang antusias mempelajari teknologi
+                  dan pengembangan web.
+                </p>
+                <p class="tentang-about-desc">
+                  Saya sedang mengembangkan kemampuan dalam HTML, CSS,
+                  JavaScript, PHP, MySQL, Laravel, dan Canva. Saya juga senang
+                  berkolaborasi, berbicara di depan umum, serta mengatur waktu
+                  dengan baik sambil terus belajar lewat latihan dan projek.
+                </p>
+                <div class="profile-facts" aria-label="Ringkasan profil">
+                  <div class="profile-fact">
+                    <span class="profile-fact__value">Kelas 11</span>
+                    <span class="profile-fact__label">Rekayasa Perangkat Lunak</span>
+                  </div>
+                  <div class="profile-fact">
+                    <span class="profile-fact__value">SMK PGRI 03</span>
+                    <span class="profile-fact__label">Malang</span>
+                  </div>
+                  <div class="profile-fact">
+                    <span class="profile-fact__value">Web &amp; Desain</span>
+                    <span class="profile-fact__label">Bidang yang dipelajari</span>
+                  </div>
+                </div>
+                <div class="about-tabs">
+                  <div class="about-tabs__buttons" role="tablist" aria-label="Kenali saya lebih jauh">
+                    <button class="about-tabs__button is-active" id="aboutTabLearning" type="button" role="tab" aria-selected="true" aria-controls="aboutTabPanel" data-about-tab="learning">Yang dipelajari</button>
+                    <button class="about-tabs__button" id="aboutTabBuilding" type="button" role="tab" aria-selected="false" aria-controls="aboutTabPanel" tabindex="-1" data-about-tab="building">Cara berkarya</button>
+                    <button class="about-tabs__button" id="aboutTabGrowth" type="button" role="tab" aria-selected="false" aria-controls="aboutTabPanel" tabindex="-1" data-about-tab="growth">Target berkembang</button>
+                  </div>
+                  <div class="about-tabs__panel" id="aboutTabPanel" role="tabpanel" aria-labelledby="aboutTabLearning" aria-live="polite">
+                    <i class="bi bi-lightbulb" aria-hidden="true"></i>
+                    <p>Sedang mengeksplorasi dasar web, pemrograman, basis data, framework, dan desain visual.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Skill -->
+      <section id="skill" class="section-skill">
+        <div class="container">
+          <div class="section-header-serif text-center mb-5" data-reveal>
+            <h2 class="section-title-serif section-title-serif--light">
+              Keterampilan Saya
+            </h2>
+          </div>
+
+          <div class="skills-subsection" data-reveal>
+            <div class="skills-subsection__heading">
+              <span class="skills-subsection__index">01</span>
+              <h3>Keahlian Teknis</h3>
+              <p>Teknologi yang sedang saya pelajari dan gunakan.</p>
+            </div>
+            <div class="skill-grid skill-grid--technical">
+              <article class="skill-card">
+                <img src="../assets/img/html5.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>HTML</h3><span>Web development</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Menyusun struktur dan konten halaman web agar rapi, jelas, dan mudah dipahami.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="HTML"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/css3.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>CSS</h3><span>Web development</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Mengatur tampilan, warna, tata letak, dan responsivitas halaman untuk berbagai ukuran layar.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="CSS"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/javascript.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>JavaScript</h3><span>Web development</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Menambahkan logika dan interaksi agar halaman web terasa lebih hidup dan mudah digunakan.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="JavaScript"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/php.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>PHP</h3><span>Web development</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Mempelajari pemrosesan di sisi server untuk mendukung fitur dan alur data pada website.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="PHP"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/mysql.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>MySQL</h3><span>Database</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Mempelajari penyimpanan dan pengelolaan data terstruktur menggunakan basis data relasional.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="MySQL"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/laravel.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>Laravel</h3><span>Web framework</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Mengenal framework PHP untuk membantu menyusun aplikasi web dengan struktur yang teratur.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="Laravel"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+              <article class="skill-card">
+                <img src="../assets/img/canva.svg" alt="" class="skill-card__logo" loading="lazy" decoding="async" />
+                <h3>Canva</h3><span>Desain visual</span>
+                <details class="skill-card__details">
+                  <summary>Lihat peran skill</summary>
+                  <p>Membuat materi visual dan mengeksplorasi komposisi desain untuk kebutuhan digital.</p>
+                </details>
+                <button class="skill-project-link" type="button" data-skill-search="Canva"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> Telusuri di projek</button>
+              </article>
+            </div>
+          </div>
+
+          <div class="skills-subsection skills-subsection--soft" data-reveal>
+            <div class="skills-subsection__heading">
+              <span class="skills-subsection__index">02</span>
+              <h3>Soft Skill</h3>
+              <p>Kebiasaan dan kemampuan yang membantu saya berkembang bersama orang lain.</p>
+            </div>
+            <div class="skill-grid skill-grid--soft">
+              <article class="skill-card skill-card--soft">
+                <span class="skill-card__icon-wrap">
+                  <i class="bi bi-mic-fill skill-card__icon" aria-hidden="true"></i>
+                </span>
+                <h3>Public Speaking</h3>
+                <p>Menyampaikan ide dan informasi dengan jelas, serta berlatih berbicara percaya diri di depan orang lain.</p>
+              </article>
+              <article class="skill-card skill-card--soft">
+                <span class="skill-card__icon-wrap">
+                  <i class="bi bi-people-fill skill-card__icon" aria-hidden="true"></i>
+                </span>
+                <h3>Kerja Sama Tim</h3>
+                <p>Mendengarkan masukan, berbagi tanggung jawab, dan saling membantu untuk mencapai tujuan bersama.</p>
+              </article>
+              <article class="skill-card skill-card--soft">
+                <span class="skill-card__icon-wrap">
+                  <i class="bi bi-clock-fill skill-card__icon" aria-hidden="true"></i>
+                </span>
+                <h3>Manajemen Waktu</h3>
+                <p>Menyusun prioritas dan membagi waktu agar tugas serta proses belajar dapat berjalan lebih teratur.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: AI toolkit -->
+      <section id="toolkit" class="section-toolkit">
+        <div class="container">
+          <div class="toolkit-heading" data-reveal>
+            <div class="toolkit-heading__copy">
+              <span class="toolkit-eyebrow">04 / AI TOOLKIT · FIELD NOTES</span>
+              <h2>Ruang untuk <em>mencoba hal baru.</em></h2>
+            </div>
+            <div class="toolkit-heading__aside">
+              <span class="toolkit-heading__count">06 <span>TOOLS</span></span>
+              <p>Ragam alat untuk eksplorasi kode, riset, dan prototipe—pilih yang paling sesuai dengan kebutuhan.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-grid">
+            <article class="toolkit-card toolkit-card--windsurf" data-reveal style="--tool-index: 0">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">01</span>
+                <span class="toolkit-card__category">CODE ENVIRONMENT</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-wind"></i></div>
+              <h3>Windsurf</h3>
+              <p>IDE dengan bantuan AI untuk menjelajah konteks proyek dan mendukung alur kerja coding.</p>
+              <a href="https://windsurf.com/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi situs resmi Windsurf">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article class="toolkit-card toolkit-card--replit" data-reveal style="--tool-index: 1">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">02</span>
+                <span class="toolkit-card__category">BUILD &amp; TEST</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-boxes"></i></div>
+              <h3>Replit Agent</h3>
+              <p>Ruang kerja berbasis browser untuk mencoba ide aplikasi dan membuat prototipe.</p>
+              <a href="https://replit.com/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi situs resmi Replit">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article class="toolkit-card toolkit-card--perplexity" data-reveal style="--tool-index: 2">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">03</span>
+                <span class="toolkit-card__category">RESEARCH</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-search"></i></div>
+              <h3>Perplexity</h3>
+              <p>Eksplorasi topik dan penelusuran informasi dengan rujukan yang bisa diperiksa.</p>
+              <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi situs resmi Perplexity">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article class="toolkit-card toolkit-card--lovable" data-reveal style="--tool-index: 3">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">04</span>
+                <span class="toolkit-card__category">UI EXPLORATION</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-magic"></i></div>
+              <h3>Lovable</h3>
+              <p>Eksperimen menyusun ide produk dan antarmuka melalui instruksi bahasa sehari-hari.</p>
+              <a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi situs resmi Lovable">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article class="toolkit-card toolkit-card--bolt" data-reveal style="--tool-index: 4">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">05</span>
+                <span class="toolkit-card__category">WEB PROTOTYPE</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Bolt.new</h3>
+              <p>Tempat mencoba dan mengiterasi prototipe web langsung dari browser.</p>
+              <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi situs resmi Bolt.new">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article class="toolkit-card toolkit-card--figma" data-reveal style="--tool-index: 5">
+              <div class="toolkit-card__topline">
+                <span class="toolkit-card__index">06</span>
+                <span class="toolkit-card__category">DESIGN WORKFLOW</span>
+              </div>
+              <div class="toolkit-card__mark" aria-hidden="true"><i class="bi bi-bezier2"></i></div>
+              <h3>Figma AI</h3>
+              <p>Eksplorasi fitur AI dalam ekosistem desain dan kolaborasi Figma.</p>
+              <a href="https://www.figma.com/ai/" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi halaman resmi Figma AI">
+                <span>Kunjungi tool</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+
+          <p class="toolkit-note" data-reveal><i class="bi bi-info-circle" aria-hidden="true"></i> Daftar ini adalah referensi tools untuk dieksplorasi, bukan klaim pengalaman atau tingkat keahlian.</p>
+        </div>
+      </section>
+
+      <!-- SECTION: Practice lab -->
+      <section id="lab" class="section-lab">
+        <div class="container">
+          <div class="lab-heading" data-reveal>
+            <span class="lab-eyebrow">05 / PRACTICE DECK</span>
+            <h2>Satu ide kecil.<br /><em>Satu langkah maju.</em></h2>
+            <p>Kumpulan ide latihan singkat dari teknologi yang sedang dipelajari. Pilih satu, kerjakan dengan ritme sendiri, lalu kembangkan sesuai kebutuhan.</p>
+          </div>
+
+          <div class="lab-board" data-reveal>
+            <div class="lab-board__side">
+              <span class="lab-board__label"><i class="bi bi-lightbulb" aria-hidden="true"></i> IDE LATIHAN</span>
+              <span class="lab-board__index" id="labIdeaIndex" aria-label="Ide 1 dari 6">01 <span>/ 06</span></span>
+              <div class="lab-board__progress" aria-hidden="true">
+                <span id="labIdeaProgress"></span>
+              </div>
+              <p>Brief ini hanya titik awal. Bebas ubah tema, konten, dan pendekatan implementasinya.</p>
+            </div>
+
+            <article class="lab-idea" aria-live="polite" aria-atomic="true">
+              <span class="lab-idea__category" id="labIdeaCategory">HTML · CSS</span>
+              <h3 id="labIdeaTitle">Kartu profil satu halaman</h3>
+              <p id="labIdeaDescription">Rancang kartu profil responsif yang menampilkan perkenalan singkat, minat, dan tautan penting dalam satu tampilan.</p>
+              <div class="lab-idea__finish">
+                <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                <p><strong>Kriteria selesai</strong><span id="labIdeaCriteria">Informasi mudah dipindai dan tata letak tetap nyaman dibaca di layar ponsel.</span></p>
+              </div>
+              <div class="lab-idea__actions">
+                <button class="lab-button lab-button--quiet" id="copyLabIdea" type="button">
+                  <i class="bi bi-copy" aria-hidden="true"></i> Salin brief
+                </button>
+                <button class="lab-button" id="nextLabIdea" type="button">
+                  Ide berikutnya <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+              <p class="lab-feedback" id="labFeedback" role="status" aria-live="polite"></p>
+            </article>
+          </div>
+          <p class="lab-note" data-reveal><i class="bi bi-info-circle" aria-hidden="true"></i> Ini adalah ide latihan, bukan daftar projek yang sudah selesai.</p>
+        </div>
+      </section>
+
+      <!-- SECTION: Projek (isinya 3 ARTICLE) -->
+      <section id="projek" class="section-projek">
+        <div class="container">
+          <div class="section-header-serif text-center" data-reveal>
+            <span class="projects-eyebrow">KARYA &amp; EKSPERIMEN / 2026</span>
+            <h2 class="section-title-serif section-title-serif--light">
+              Projek Pilihan
+            </h2>
+            <p class="projects-intro">Jelajahi beberapa hal yang saya buat, pelajari, dan kembangkan.</p>
+          </div>
+
+          <div class="row g-4 mt-3">
+            <div class="project-filter" role="group" aria-label="Filter projek" data-reveal>
+              <button class="project-filter__button is-active" type="button" data-project-filter="all" aria-pressed="true">Semua projek</button>
+              <button class="project-filter__button" type="button" data-project-filter="website" aria-pressed="false">Website &amp; aplikasi</button>
+              <button class="project-filter__button" type="button" data-project-filter="game" aria-pressed="false">Game web</button>
+              <button class="project-filter__button" type="button" data-project-filter="portfolio" aria-pressed="false">Portofolio</button>
+              <button class="project-filter__button project-filter__saved" id="savedProjectsFilter" type="button" data-project-filter="saved" aria-pressed="false">
+                <i class="bi bi-bookmark" aria-hidden="true"></i>
+                Disimpan <span id="savedProjectCount">0</span>
+              </button>
+              <label class="project-search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <input id="projectSearch" type="search" placeholder="Cari projek atau teknologi..." aria-label="Cari projek berdasarkan nama atau teknologi" aria-keyshortcuts="/ Control+K Meta+K" />
+                <button class="project-search__clear" id="clearProjectSearch" type="button" aria-label="Hapus pencarian" hidden>
+                  <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+                </button>
+              </label>
+              <span class="project-filter__count" id="projectCount" aria-live="polite">3 projek</span>
+            </div>
+            <p class="project-search-hint">
+              <i class="bi bi-keyboard" aria-hidden="true"></i>
+              Tekan <kbd>/</kbd> atau <kbd>Ctrl</kbd> + <kbd>K</kbd> untuk mencari.
+            </p>
+            <p class="project-feedback" id="projectFeedback" role="status" aria-live="polite"></p>
+
+            <p class="project-empty" id="projectEmpty" hidden role="status">
+              <i class="bi bi-search" aria-hidden="true"></i>
+              Belum ada projek yang cocok. Coba kata kunci atau filter lain.
+            </p>
+
+            <div class="col-lg-4 col-md-6 project-item" data-project-id="flappy-bird" data-project-category="game" data-reveal style="--i: 0">
+              <article class="project">
+                <div class="project__media project__media--portrait" style="--project-image: url('../img/flappy-bird.png')">
+                  <span class="project__label"><i class="bi bi-controller" aria-hidden="true"></i> GAME WEB</span>
+                  <button class="project-preview" type="button" data-project-preview data-title="Flappy Bird" aria-label="Perbesar gambar game Flappy Bird">
+                    <img src="../assets/img/flappy-bird.png" alt="Screenshot game Flappy Bird dengan pipa hijau dan skor 0" width="503" height="747" loading="lazy" decoding="async" />
+                    <span class="project-preview__fallback" hidden>
+                      <i class="bi bi-image" aria-hidden="true"></i>
+                      <span>Pratinjau gambar belum tersedia</span>
+                    </span>
+                    <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Lihat pratinjau</span>
+                  </button>
+                  <button class="project-save" type="button" data-project-save aria-label="Simpan projek Flappy Bird" aria-pressed="false">
+                    <i class="bi bi-bookmark" aria-hidden="true"></i>
+                    <span>Simpan</span>
+                  </button>
+                </div>
+                <div class="project__body">
+                  <span class="project__no">01</span>
+                  <h3 class="project__title">Flappy Bird</h3>
+                  <p class="project__desc">
+                    Game arcade sederhana bergaya Flappy Bird. Hindari pipa dan raih skor setinggi mungkin.
+                  </p>
+                  <ul class="project__tech list-unstyled">
+                    <li>Game Web</li>
+                    <li>Arcade</li>
+                  </ul>
+                  <div class="project__actions">
+                    <a
+                      href="https://flappybirdrch.vercel.app/"
+                      class="btn-project btn-project--primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Lihat Projek</a>
+                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack1">
+                      Ringkasan stack
+                    </button>
+                  </div>
+                  <div class="project__extra" id="projectStack1" hidden>
+                    <strong>Teknologi yang dicantumkan</strong>
+                    <span>Game arcade Flappy Bird yang dapat dimainkan melalui browser.</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project-item" data-project-id="manajemen-data-sekolah" data-project-category="website" data-reveal style="--i: 1">
+              <article class="project">
+                <div class="project__media project__media--school" style="--project-image: url('../img/manajemen-data-sekolah.png')">
+                  <span class="project__label"><i class="bi bi-database" aria-hidden="true"></i> LARAVEL / PHP</span>
+                  <button class="project-preview" type="button" data-project-preview data-title="Web Manajemen Data Sekolah" aria-label="Perbesar gambar Web Manajemen Data Sekolah">
+                    <img src="../assets/img/manajemen-data-sekolah.png" alt="Tampilan Web Manajemen Data Sekolah dengan tabel data produk" width="449" height="521" loading="lazy" decoding="async" />
+                    <span class="project-preview__fallback" hidden>
+                      <i class="bi bi-image" aria-hidden="true"></i>
+                      <span>Pratinjau gambar belum tersedia</span>
+                    </span>
+                    <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Lihat pratinjau</span>
+                  </button>
+                  <button class="project-save" type="button" data-project-save aria-label="Simpan Web Manajemen Data Sekolah" aria-pressed="false">
+                    <i class="bi bi-bookmark" aria-hidden="true"></i>
+                    <span>Simpan</span>
+                  </button>
+                </div>
+                <div class="project__body">
+                  <span class="project__no">02</span>
+                  <h3 class="project__title">Web Manajemen Data Sekolah</h3>
+                  <p class="project__desc">
+                    Aplikasi CRUD sederhana untuk mengelola data siswa dan nilai berbasis Laravel.
+                  </p>
+                  <ul class="project__tech list-unstyled">
+                    <li>Laravel</li>
+                    <li>PHP</li>
+                  </ul>
+                  <div class="project__actions">
+                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack2">
+                      Ringkasan stack
+                    </button>
+                  </div>
+                  <div class="project__extra" id="projectStack2" hidden>
+                    <strong>Teknologi yang dicantumkan</strong>
+                    <span>Laravel dan PHP.</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project-item" data-project-id="rahardyan-portfolio" data-project-category="portfolio" data-reveal style="--i: 2">
+              <article class="project">
+                <div class="project__media project__media--profile" style="--project-image: url('../img/profil.png')">
+                  <span class="project__label"><i class="bi bi-person-badge" aria-hidden="true"></i> PORTOFOLIO</span>
+                  <button class="project-preview" type="button" data-project-preview data-title="Portofolio Rahardyan" aria-label="Perbesar foto pada portofolio Rahardyan">
+                    <img src="../assets/img/profil.png" alt="Foto Rahardyan pada halaman beranda portofolionya" width="768" height="1024" loading="lazy" decoding="async" />
+                    <span class="project-preview__fallback" hidden>
+                      <i class="bi bi-image" aria-hidden="true"></i>
+                      <span>Pratinjau gambar belum tersedia</span>
+                    </span>
+                    <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Lihat pratinjau</span>
+                  </button>
+                  <button class="project-save" type="button" data-project-save aria-label="Simpan Portofolio Rahardyan" aria-pressed="false">
+                    <i class="bi bi-bookmark" aria-hidden="true"></i>
+                    <span>Simpan</span>
+                  </button>
+                </div>
+                <div class="project__body">
+                  <span class="project__no">03</span>
+                  <h3 class="project__title">Portofolio Rahardyan</h3>
+                  <p class="project__desc">
+                    Website portofolio ini memperkenalkan profil, keterampilan, dan projek Rahardyan.
+                  </p>
+                  <ul class="project__tech list-unstyled">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <div class="project__actions">
+                    <a
+                      href="#home"
+                      class="btn-project btn-project--primary"
+                    >Lihat Portofolio</a>
+                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack3">
+                      Ringkasan stack
+                    </button>
+                  </div>
+                  <div class="project__extra" id="projectStack3" hidden>
+                    <strong>Teknologi yang dicantumkan</strong>
+                    <span>HTML, CSS, JavaScript, dan Bootstrap.</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Kontak -->
+      <section id="kontak" class="section-kontak">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-details" data-reveal>
+              <span class="contact-eyebrow">06 / KONTAK</span>
+              <h2 class="contact-title">
+                Mari <span>berkolaborasi.</span>
+              </h2>
+              <p class="contact-intro">
+                Ada pertanyaan, ide, atau ingin berdiskusi santai tentang web?
+                Silakan pilih cara yang paling nyaman untuk menghubungi saya.
+              </p>
+
+              <div class="contact-grid">
+                <article class="contact-card">
+                  <span class="contact-card__icon contact-card__icon--whatsapp">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3>WhatsApp</h3>
+                    <p>Untuk obrolan dan komunikasi langsung.</p>
+                  </div>
+                  <a
+                    class="contact-card__value"
+                    href="https://wa.me/6288989893663"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >088989893663</a>
+                </article>
+                <article class="contact-card">
+                  <span class="contact-card__icon contact-card__icon--instagram">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3>Instagram</h3>
+                    <p>Temukan saya dan lihat aktivitas terbaru.</p>
+                  </div>
+                  <a
+                    class="contact-card__value"
+                    href="https://www.instagram.com/r4hardyan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >@r4hardyan</a>
+                </article>
+                <article class="contact-card">
+                  <span class="contact-card__icon contact-card__icon--email">
+                    <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3>Gmail</h3>
+                    <p>Untuk pesan dan keperluan yang lebih formal.</p>
+                  </div>
+                  <a class="contact-card__value" href="mailto:rahardyanryujin@gmail.com">
+                    rahardyanryujin@gmail.com
+                  </a>
+                </article>
+                <article class="contact-card">
+                  <span class="contact-card__icon">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3>GitHub</h3>
+                    <p>Lihat profil dan projek yang saya kerjakan.</p>
+                  </div>
+                  <a
+                    class="contact-card__value"
+                    href="https://github.com/Rahardyannata8210"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >Rahardyannata8210</a>
+                </article>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactMessageForm" data-reveal>
+              <h3>Kirim Pesan</h3>
+              <p class="contact-form__intro">
+                Isi form untuk menyusun pesan. Draft dapat disalin dan dikirim
+                melalui aplikasi pilihan Anda.
+              </p>
+
+              <label class="contact-form__label" for="contactName">Nama Anda</label>
+              <input
+                class="contact-form__field"
+                id="contactName"
+                name="name"
+                type="text"
+                placeholder="Nama Anda..."
+                autocomplete="name"
+                maxlength="80"
+                required
+              />
+
+              <label class="contact-form__label" for="contactCategory">Kategori</label>
+              <select class="contact-form__field" id="contactCategory" name="category" required>
+                <option value="Pertanyaan">Pertanyaan</option>
+                <option value="Kolaborasi">Kolaborasi</option>
+                <option value="Diskusi santai">Diskusi santai</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+
+              <label class="contact-form__label" for="contactMessage">Pesan</label>
+              <textarea
+                class="contact-form__field contact-form__field--textarea"
+                id="contactMessage"
+                name="message"
+                rows="4"
+                placeholder="Tulis pesan di sini..."
+                maxlength="1200"
+                required
+              ></textarea>
+
+              <label class="contact-form__label" for="contactDraft">Pratinjau pesan</label>
+              <textarea class="contact-form__field contact-form__field--textarea contact-draft__text" id="contactDraft" rows="4" readonly aria-label="Pratinjau pesan yang bisa disalin"></textarea>
+              <button class="contact-form__submit" id="copyContactDraft" type="button">
+                <i class="bi bi-copy" aria-hidden="true"></i>
+                Salin draft pesan
+              </button>
+              <p class="contact-form__note" id="contactFormNote" aria-live="polite">
+                Draft bisa disalin, lalu dikirim melalui WhatsApp atau email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="project-lightbox" id="projectLightbox" aria-labelledby="projectLightboxTitle">
+      <div class="project-lightbox__header">
+        <h2 id="projectLightboxTitle">Pratinjau projek</h2>
+        <button class="project-lightbox__close" type="button" aria-label="Tutup pratinjau">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+      <img class="project-lightbox__image" id="projectLightboxImage" alt="" decoding="async" />
+      <p class="project-lightbox__hint">Tekan Esc atau tombol tutup untuk kembali ke portofolio.</p>
+    </dialog>
+
+    <!-- 3. FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="footer-name">Rahardyan Putra Winata</span>
+            <span class="footer-role">Siswa Rekayasa Perangkat Lunak</span>
+          </div>
+          <button class="footer-print" id="printPortfolio" type="button">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            Cetak / Simpan PDF
+          </button>
+          <button class="footer-share" id="sharePortfolio" type="button">
+            <i class="bi bi-share" aria-hidden="true"></i>
+            Bagikan portofolio
+          </button>
+          <p class="footer-feedback" id="shareFeedback" role="status" aria-live="polite"></p>
+          <p class="footer-copy">&copy; 2026 Rahardyan Putra Winata.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="back-to-top" id="backToTop" href="#home" aria-label="Kembali ke atas">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+  </body>
+</html>
