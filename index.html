@@ -569,7 +569,7 @@
         </div>
       </section>
 
-      <!-- SECTION: Projek (isinya 3 ARTICLE) -->
+      <!-- SECTION: Projek -->
       <section id="projek" class="section-projek">
         <div class="container">
           <div class="section-header-serif text-center" data-reveal>
@@ -583,7 +583,6 @@
           <div class="row g-4 mt-3">
             <div class="project-filter" role="group" aria-label="Filter projek" data-reveal>
               <button class="project-filter__button is-active" type="button" data-project-filter="all" aria-pressed="true">Semua projek</button>
-              <button class="project-filter__button" type="button" data-project-filter="website" aria-pressed="false">Website &amp; aplikasi</button>
               <button class="project-filter__button" type="button" data-project-filter="game" aria-pressed="false">Game web</button>
               <button class="project-filter__button" type="button" data-project-filter="portfolio" aria-pressed="false">Portofolio</button>
               <button class="project-filter__button project-filter__saved" id="savedProjectsFilter" type="button" data-project-filter="saved" aria-pressed="false">
@@ -597,7 +596,7 @@
                   <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
                 </button>
               </label>
-              <span class="project-filter__count" id="projectCount" aria-live="polite">3 projek</span>
+              <span class="project-filter__count" id="projectCount" aria-live="polite">2 projek</span>
             </div>
             <p class="project-search-hint">
               <i class="bi bi-keyboard" aria-hidden="true"></i>
@@ -610,10 +609,10 @@
               Belum ada projek yang cocok. Coba kata kunci atau filter lain.
             </p>
 
-            <div class="col-lg-12 col-md-12 project-item project-item--featured" data-project-id="flappy-bird" data-project-category="game" data-reveal style="--i: 0">
+            <div class="col-lg-6 col-md-6 project-item" data-project-id="flappy-bird" data-project-category="game" data-reveal style="--i: 0">
               <article class="project">
                 <div class="project__media project__media--portrait" style="--project-image: url('../img/flappy-bird.png')">
-                  <span class="project__label"><i class="bi bi-controller" aria-hidden="true"></i> FEATURED · GAME WEB</span>
+                  <span class="project__label"><i class="bi bi-controller" aria-hidden="true"></i> GAME WEB</span>
                   <button class="project-preview" type="button" data-project-preview data-title="Flappy Bird" aria-label="Perbesar gambar game Flappy Bird">
                     <img src="../assets/img/flappy-bird.png" alt="Screenshot game Flappy Bird dengan pipa hijau dan skor 0" width="503" height="747" loading="lazy" decoding="async" />
                     <span class="project-preview__fallback" hidden>
@@ -656,47 +655,7 @@
               </article>
             </div>
 
-            <div class="col-lg-6 col-md-6 project-item" data-project-id="manajemen-data-sekolah" data-project-category="website" data-reveal style="--i: 1">
-              <article class="project">
-                <div class="project__media project__media--school" style="--project-image: url('../img/manajemen-data-sekolah.png')">
-                  <span class="project__label"><i class="bi bi-database" aria-hidden="true"></i> LARAVEL / PHP</span>
-                  <button class="project-preview" type="button" data-project-preview data-title="Web Manajemen Data Sekolah" aria-label="Perbesar gambar Web Manajemen Data Sekolah">
-                    <img src="../assets/img/manajemen-data-sekolah.png" alt="Tampilan Web Manajemen Data Sekolah dengan tabel data produk" width="449" height="521" loading="lazy" decoding="async" />
-                    <span class="project-preview__fallback" hidden>
-                      <i class="bi bi-image" aria-hidden="true"></i>
-                      <span>Pratinjau gambar belum tersedia</span>
-                    </span>
-                    <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Lihat pratinjau</span>
-                  </button>
-                  <button class="project-save" type="button" data-project-save aria-label="Simpan Web Manajemen Data Sekolah" aria-pressed="false">
-                    <i class="bi bi-bookmark" aria-hidden="true"></i>
-                    <span>Simpan</span>
-                  </button>
-                </div>
-                <div class="project__body">
-                  <span class="project__no">02</span>
-                  <h3 class="project__title">Web Manajemen Data Sekolah</h3>
-                  <p class="project__desc">
-                    Aplikasi CRUD sederhana untuk mengelola data siswa dan nilai berbasis Laravel.
-                  </p>
-                  <ul class="project__tech list-unstyled">
-                    <li>Laravel</li>
-                    <li>PHP</li>
-                  </ul>
-                  <div class="project__actions">
-                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack2">
-                      Ringkasan stack
-                    </button>
-                  </div>
-                  <div class="project__extra" id="projectStack2" hidden>
-                    <strong>Teknologi yang dicantumkan</strong>
-                    <span>Laravel dan PHP.</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-lg-6 col-md-6 project-item" data-project-id="rahardyan-portfolio" data-project-category="portfolio" data-reveal style="--i: 2">
+            <div class="col-lg-6 col-md-6 project-item" data-project-id="rahardyan-portfolio" data-project-category="portfolio" data-reveal style="--i: 1">
               <article class="project">
                 <div class="project__media project__media--profile" style="--project-image: url('../img/profil.png')">
                   <span class="project__label"><i class="bi bi-person-badge" aria-hidden="true"></i> PORTOFOLIO</span>
@@ -714,7 +673,7 @@
                   </button>
                 </div>
                 <div class="project__body">
-                  <span class="project__no">03</span>
+                  <span class="project__no">02</span>
                   <h3 class="project__title">Portofolio Rahardyan</h3>
                   <p class="project__desc">
                     Website portofolio ini memperkenalkan profil, keterampilan, dan projek Rahardyan.
@@ -730,11 +689,11 @@
                       href="#home"
                       class="btn-project btn-project--primary"
                     >Lihat Portofolio</a>
-                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack3">
+                    <button class="btn-project btn-project--details" type="button" aria-expanded="false" aria-controls="projectStack2">
                       Ringkasan stack
                     </button>
                   </div>
-                  <div class="project__extra" id="projectStack3" hidden>
+                  <div class="project__extra" id="projectStack2" hidden>
                     <strong>Teknologi yang dicantumkan</strong>
                     <span>HTML, CSS, JavaScript, dan Bootstrap.</span>
                   </div>
